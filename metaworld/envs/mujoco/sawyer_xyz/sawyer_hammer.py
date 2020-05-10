@@ -25,10 +25,14 @@ class SawyerHammerEnv(SawyerXYZEnv):
             rewMode='orig',
             **kwargs
     ):
-        hand_low=(-0.5, 0.40, 0.05)
-        hand_high=(0.5, 1, 0.5)
-        obj_low=(-0.1, 0.5, 0.02)
-        obj_high=(0.1, 0.6, 0.02)
+        #hand_low=(-0.5, 0.40, 0.05)
+        #hand_high=(0.5, 1, 0.5)
+        #obj_low=(-0.1, 0.5, 0.02)
+        #obj_high=(0.1, 0.6, 0.02)
+        hand_low=(-1.,-1.,-1.)
+        hand_high=(1.,1.,1.)
+        obj_low=(-1.,-1.,-1.)
+        obj_high=(1.,1.,1.)
         SawyerXYZEnv.__init__(
             self,
             frame_skip=5,
